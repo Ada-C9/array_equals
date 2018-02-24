@@ -3,6 +3,7 @@ require 'minitest/reporters'
 require_relative '../lib/array_equals'
 
 describe "array equals" do
+  
   describe "basic tests" do
     it "arrays are equal" do
       array1 = [10, 20, 30, 40, 50, 60]
@@ -24,7 +25,8 @@ describe "array equals" do
 
       array_equals(array1, array2).must_equal false
     end
-  end
+  end # basic tests
+
 
   describe "edge cases" do
     it "arrays are empty: equal" do
@@ -68,5 +70,6 @@ describe "array equals" do
 
       array_equals(array1, array2).must_equal false
     end
-  end
-end
+  end # describe edge cases
+
+end # describe array equals
