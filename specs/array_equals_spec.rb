@@ -2,6 +2,8 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/array_equals'
 
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 describe "array equals" do
   describe "basic tests" do
     it "arrays are equal" do
@@ -61,7 +63,7 @@ describe "array equals" do
 
       array_equals(array1, array2).must_equal false
     end
-
+    
     it "only second array is nil: not equal" do
       array1 = [20]
       array2 = nil
