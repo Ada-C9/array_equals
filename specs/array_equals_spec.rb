@@ -2,6 +2,9 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/array_equals'
 
+# The alteration below, allowing use of the mintest reporters, is the only alteration I made to the spec doc.
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 describe "array equals" do
   describe "basic tests" do
     it "arrays are equal" do
