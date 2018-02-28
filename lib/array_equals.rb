@@ -2,7 +2,11 @@
 # and the same integer values in the same exact order
 
 def array_equals(array1, array2)
+  # return true if array1.empty? || array2.empty? 
+
   if array1.count == array2.count
+    return true if array1.empty? && array2.empty?
+
     array1.each do |num|
       array2.each do |num2|
         if num == num2
@@ -14,7 +18,6 @@ def array_equals(array1, array2)
 
       ###### raise NotImplementedError
     end # external loop
-  # return true
 
   else
     return false

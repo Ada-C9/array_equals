@@ -26,7 +26,7 @@ describe "array equals" do
       array_equals(array1, array2).must_equal false
     end
   end
-  
+
   describe "edge cases" do
     it "arrays are empty: equal" do
       array1 = []
@@ -34,20 +34,20 @@ describe "array equals" do
 
       array_equals(array1, array2).must_equal true
     end
-  #
-  #   it "only first array is empty: not equal" do
-  #     array1 = []
-  #     array2 = [50, 30]
-  #
-  #     array_equals(array1, array2).must_equal false
-  #   end
-  #
-  #   it "only second array is empty: not equal" do
-  #     array1 = [20]
-  #     array2 = []
-  #
-  #     array_equals(array1, array2).must_equal false
-  #   end
+
+    it "only first array is empty: not equal" do
+      array1 = []
+      array2 = [50, 30]
+
+      array_equals(array1, array2).must_equal false
+    end
+
+    it "only second array is empty: not equal" do
+      array1 = [20]
+      array2 = []
+
+      array_equals(array1, array2).must_equal false
+    end
   #
   #   it "arrays are nil: equal" do
   #     array1 = nil
@@ -69,5 +69,5 @@ describe "array equals" do
   #
   #     array_equals(array1, array2).must_equal false
   #   end
-   # end
+   end
 end
