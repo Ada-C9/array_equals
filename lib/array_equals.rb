@@ -2,7 +2,12 @@
 # and the same integer values in the same exact order
 
 def array_equals(array1, array2)
-  # return true if array1.empty? || array2.empty? 
+  # return true if array1.empty? || array2.empty?
+  if array1 == nil && array2 == nil
+    return true
+  elsif array1 == nil || array2 == nil
+    return false
+  end
 
   if array1.count == array2.count
     return true if array1.empty? && array2.empty?

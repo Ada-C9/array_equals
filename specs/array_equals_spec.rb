@@ -48,26 +48,26 @@ describe "array equals" do
 
       array_equals(array1, array2).must_equal false
     end
-  #
-  #   it "arrays are nil: equal" do
-  #     array1 = nil
-  #     array2 = nil
-  #
-  #     array_equals(array1, array2).must_equal true
-  #   end
-  #
-  #   it "only first array is nil: not equal" do
-  #     array1 = nil
-  #     array2 = [10, 20]
-  #
-  #     array_equals(array1, array2).must_equal false
-  #   end
-  #
-  #   it "only second array is nil: not equal" do
-  #     array1 = [20]
-  #     array2 = nil
-  #
-  #     array_equals(array1, array2).must_equal false
-  #   end
+
+    it "arrays are nil: equal" do
+      array1 = nil
+      array2 = nil
+
+      array_equals(array1, array2).must_equal true
+    end
+
+    it "only first array is nil: not equal" do
+      array1 = nil
+      array2 = [10, 20]
+
+      array_equals(array1, array2).must_equal false
+    end
+
+    it "only second array is nil: not equal" do
+      array1 = [20]
+      array2 = nil
+
+      array_equals(array1, array2).must_equal false
+    end
    end
 end
