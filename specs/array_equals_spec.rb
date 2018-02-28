@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'minitest/pride'
 require_relative '../lib/array_equals'
 
 describe "array equals" do
@@ -68,5 +69,5 @@ describe "array equals" do
 
       array_equals(array1, array2).must_equal false
     end
-  end
+   end
 end
