@@ -14,21 +14,23 @@ def array_equals(array1, array2)
     # raise NotImplementedError
     one_array = []
     two_array = []
-    # assuming both arrays only have numbers
-    
+
+
     array1.each_with_index do |num, i|
-      one_array << num + i
-    end
-    array2.each_with_index do |e, index|
-      two_array << e + index
+      one_array << i
+      one_array << num
     end
 
-    if one_array.eql?(two_array)
+    array2.each_with_index do |e, index|
+        two_array << index
+        two_array << e
+    end
+
+    if one_array == two_array
       return true
     else
       return false
     end
-
 
   end
 end
